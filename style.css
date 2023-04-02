@@ -57,13 +57,14 @@ body {
 
 #p2 {
     background-color: rgb(168, 201, 215);
+    
 }
 
 .dino_animation1 {
-    width: 62.4px;
-    height: 3rem;
+    width: 65.4px;
+    height: 4rem;
     position: relative;
-    top: 9.3rem;
+    top: 8rem;
     float: left;
     left: 2rem;
 
@@ -97,6 +98,7 @@ body {
     animation: obstacle 1s infinite linear;
 }
 
+
 #moon {
     width: 5%;
     height: 23%;
@@ -107,6 +109,9 @@ body {
 
 
     opacity: 0.3;
+    /* animation: moon 30s infinite linear; */
+}
+.moonAnimation{
     animation: moon 30s infinite linear;
 }
 

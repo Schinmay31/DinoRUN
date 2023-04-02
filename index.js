@@ -14,6 +14,8 @@ $(".btn").click(function () {
   }
   if(gameStatus == true){
     $("#cactus").addClass("obsAnimation");
+    $("#moon").addClass("moonAnimation");
+    document.getElementById("dino").src = "img/ZJFD.gif";
     dinoWorking();
     dinoCheck();
     timer();
@@ -28,17 +30,17 @@ function timer() {
 }
 
 
-
-
-
 function dinoWorking() {
   $(window).keypress(function (e) {
     if (e.key == "w") {
 
       $(".dino_animation1").addClass("jump1");
 
+      document.getElementById("dino").src = "img/goku2.png";
+
       setTimeout(function () {
         $(".dino_animation1").removeClass("jump1");
+        document.getElementById("dino").src = "img/ZJFD.gif";
       }, 300);
     }
 
@@ -55,7 +57,7 @@ function dinoCheck() {
 
     if (cactusLeft > -124 && cactusLeft < -23 && dinoTop > 110) {
       alert("game over");
-      gameOver()
+      gameOver();
     }
   }, 100);
 }
@@ -64,7 +66,12 @@ function dinoCheck() {
 
 function gameOver() {
   $("#cactus").removeClass("obsAnimation");
+  $("#moon").removeClass("moonAnimation");
+  document.getElementById("dino").src = "img/goku3.jpg";
+ 
   gameStatus = false;
   score = 0;
 
 }
+
+
