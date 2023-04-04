@@ -25,7 +25,7 @@ $(".btn").click(function () {
 function timer() {
   let T = setInterval(function Timer() {
     score += 1;
-    console.log(score);
+    // console.log(score);
   }, 500);
 }
 
@@ -38,11 +38,18 @@ function dinoWorking() {
 
       document.getElementById("dino").src = "img/goku2.png";
 
+      
+
       setTimeout(function () {
         $(".dino_animation1").removeClass("jump1");
         document.getElementById("dino").src = "img/ZJFD.gif";
       }, 300);
     }
+    if(e.key == "s"){
+      document.getElementById("dino").src = "img/goku-down.jpg";
+      
+    }
+
 
 });
 }
@@ -54,8 +61,10 @@ function dinoCheck() {
     let cactusLeft = parseInt(window.getComputedStyle(cactus, null).getPropertyValue("left"));
     let cacTop = parseInt(window.getComputedStyle(cactus, null).getPropertyValue("top"));
 
+    console.log(cactusLeft);
 
-    if (cactusLeft > -124 && cactusLeft < -23 && dinoTop > 110) {
+
+    if (cactusLeft < -27 && cactusLeft > -125 && dinoTop > 110) {
       alert("game over");
       gameOver();
     }

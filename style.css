@@ -1,35 +1,46 @@
 body {
-    background-color: rgb(229, 227, 223);
+    /* /* background-color: rgb(229, 227, 223); */
+    background-color: #E7DBD6;
+    margin: 0;
 }
 
 .header {
-    width: 80%;
-    /* height: 6rem; */
+    width: 100%;
+    height:12rem;
     margin: auto;
-    border: solid 1px blueviolet;
-    border-radius: 50%;
-    animation: head-background1 5s infinite;
+    /* margin-top: 1rem; */
+    /* border: solid 0.1px blueviolet; */
+    /* border-radius: 50%; */
+    /* background-color: rgb(47, 47, 62); */
+    /* animation: head-background1 5s infinite; */
+    text-align: center;
+}
+.header img{
+    width : 25%;
+    height: 100%;
+    
 }
 
-.header h1 {
+/* .header h1 {
     margin-left: 43%;
     font-family: fantasy;
     font-weight: 100;
     font-size: 2.5rem;
     color: rgb(254, 204, 204);
 
-}
+} */
 
-.header:hover {
+.header img:hover {
     cursor: pointer;
-    animation: head-background2 0.3s infinite;
+    /* animation: head-background2 0.3s infinite; */
 }
 
 .screen {
     height: 33rem;
     width: 75rem;
     margin: auto;
-    margin-top: 1rem;
+    margin-top: 5rem;
+    margin-bottom: 0;
     /* border: solid 1px black; */
 }
 
@@ -48,7 +59,7 @@ body {
     border-radius: 10px;
     margin: auto;
     margin-top: 1rem;
-    animation: jump 0.3 linear;
+    animation: jump 0.4 linear;
 }
 
 #p1 {
@@ -147,6 +158,7 @@ body {
     width: 8%;
     height: 6%;
     margin: auto;
+    margin-bottom: 0;
     margin-top: 3rem;
     /* border-radius: 10px; */
 }
@@ -168,6 +180,37 @@ body {
     animation: head-background2 0.3s infinite;
 }
    
+.bottom{
+    /* position: ; */
+    width: 100%;
+    height: 20rem;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    /* border: solid 1px black; */
+    background: linear-gradient(180deg, #E7DBD6 50%, rgb(47, 47, 62) 50%);
+
+    
+}
+.bottom img{
+    position: relative;
+    float: right;
+    /* top: -8rem;
+    /* width: 15%; */
+    width: 15%;
+    height: 100%;
+    bottom: 0;
+    right: 3rem;
+    top: -2rem;
+}
+
+.content{
+    width: 70%;
+    height: 50%;
+    margin-top: 10rem;
+    /* border: 1px solid darkgoldenrod; */
+}
+
 
 
 @keyframes obstacle {
@@ -185,7 +228,7 @@ body {
         top: 8rem;
     }
 
-    10% {
+    /* 10% {
         top: 6.8rem;
     }
 
@@ -199,13 +242,13 @@ body {
 
     40% {
         top: 3.2rem;
-    }
+    } */
 
     50% {
         top: 2rem;
     }
 
-    60% {
+    /* 60% {
         top: 3.2rem;
     }
 
@@ -219,7 +262,7 @@ body {
 
     90% {
         top: 7.5rem;
-    }
+    } */
 
     100% {
         top: 8rem;
